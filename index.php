@@ -198,8 +198,10 @@
                         <td><img src="uploads/<?php echo $row['image'] ?>" width="100" height="125"></td>
                         <td><?php echo $row['fecha'] ?></td>
                         <td>
-                            <a href="update.php?id=<?php echo $row['id'] ?>" class="text-dark"><i class='fas fa-edit'></i></a>&nbsp;&nbsp;
-                            <a href="delete.php?id=<?php echo $row['id'] ?>" class="text-dark"><i class='fas fa-trash'></i></a>
+                          
+                        <a href="update.php?id=<?php echo $row['id'] ?>" class="text-dark"><button  class="btn-warning" type="submit">Editar</button> </a>
+                           |
+                            <a href="delete.php?id=<?php echo $row['id'] ?>" class="text-dark"><button  class="btn-danger" type="submit">Eliminar</button></a>
                         </td>
                         <td>
                         <form action="" method="post">
@@ -207,7 +209,7 @@
                     <input type="hidden" name="name" value=" <?php echo $row['name'];?>">
                     <input type="hidden" name="email" value=" <?php echo $row['email'];?>">
                     <input type="hidden" name="fecha" value=" <?php echo $row['fecha'];?>">
-                    <button value="btn_pdf" class="btn-success" type="submit" name="accion">Descargar Pdf</button>
+                    <button value="btn_pdf" class="btn-success" type="submit" name="accion">Descargar</button>
                     </form>
                            </td>
                         
